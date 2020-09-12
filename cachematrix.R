@@ -44,3 +44,18 @@ cacheSolve <- function(x,...) {
     m
     
 }
+
+
+#example of how to run this 
+#step1: create the matrix m 
+#Step2:run the makeCacheMatrix and save the result in a variable 
+#Step3: call the cacheSolve with the named variable as argument 
+
+c=rbind(c(1, -1/4), c(-1/4, 1))  
+
+mkmatrix <-makeCacheMatrix(c)
+
+
+solve <-cacheSolve(mkmatrix)
+
+solve
